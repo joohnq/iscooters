@@ -1,0 +1,206 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+.BarIcons {
+  background-color: var(--yellow);
+}
+
+.BarIcons_field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.BarIcons .bi {
+  font-size: 30px;
+}
+
+.BarIconsBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80px;
+  gap: 20px;
+}
+
+.BarIcons_field-text {
+  color: var(--gray);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.MainTitle {
+  text-align: center;
+  color: var(--gray);
+  margin-top: 50px;
+}
+
+.MainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.MainHeaderLogo img {
+  height: 100px;
+}
+
+.MainHeaderNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.MainHeaderNav_item {
+  list-style: none;
+}
+
+.MainHeaderNav_menu {
+  background: transparent;
+  width: 50px;
+}
+
+.MainHeaderNav .bi {
+  font-size: 40px;
+}
+
+.Home {
+  height: 600px;
+  width: 100%;
+}
+
+.HomeImage {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.accordion {
+  background-color: var(--yellow);
+  margin-top: -50px;
+  z-index: 1000;
+  position: relative;
+  max-width: 1600px;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+}
+
+.AccordionHeaders {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  font-weight: bold;
+}
+
+.accordion-button::after {
+  display: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff !important;
+  border-bottom: 5px solid var(--gray);
+  box-shadow: none !important;
+}
+
+.accordion-item {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+.SearchByBrandCarousel{
+  height: 100px;
+}
+
+@media screen and (min-width: 0) {
+  .accordion {
+    padding: 20px;
+    border-radius: 0;
+  }
+  .AccordionHeaders {
+    flex-direction: column;
+  }
+  .accordion-button {
+    font-size: 20px;
+    text-align: center;
+  }
+  .MainTitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .MainTitle {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .MainTitle {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .accordion {
+    padding: 30px;
+  }
+  .AccordionHeaders {
+    flex-direction: row;
+  }
+
+  .MainTitle {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .MainTitle {
+    font-size: 50px;
+  }
+  .MainHeader {
+    gap: 150px;
+  }
+  .BarIcons_field-text {
+    font-size: 16px;
+  }
+  .MainHeaderNav_menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1400px) {
+  .MainHeaderNav_item {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .accordion {
+    border-radius: 40px;
+  }
+  .MainHeaderNav_item {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .BarIcons_field-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .MainHeaderNav_item {
+    display: none;
+  }
+}
