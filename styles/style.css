@@ -1,5 +1,9 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
+main {
+  background-color: #f2f3f3;
+}
+
 .BarIcons {
   background-color: var(--yellow);
 }
@@ -40,6 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .MainHeaderLogo img {
@@ -114,8 +119,49 @@
   border: 0 !important;
 }
 
-.SearchByBrandCarousel{
+.SearchByBrandCarousel {
   height: 100px;
+}
+
+.HighlightsCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  justify-content: center;
+  gap: 30px;
+}
+
+.Card {
+  width: 100%;
+  margin-top: 50px;
+  background-color: #fff;
+}
+
+.Card img {
+  width: 100%;
+}
+
+.Card_title {
+  color: var(--gray);
+  background-color: var(--yellow);
+  padding: 15px 0 15px 15px;
+}
+
+.Card_desc-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0 5px;
+}
+
+.Card_desc-text {
+  color: var(--gray-3);
+  padding: 0 15px;
+  margin-bottom: 0;
+}
+
+.Card_value {
+  color: var(--gray);
+  padding: 15px 0 15px 15px;
 }
 
 @media screen and (min-width: 0) {
@@ -190,6 +236,12 @@
   }
   .MainHeaderNav_item {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .MainHeaderLogo img {
+    height: 80px;
   }
 }
 
