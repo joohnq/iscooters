@@ -4,22 +4,28 @@ main {
   background-color: #f2f3f3;
 }
 
-.BarIcons {
+.MainTitle {
+  text-align: center;
+  color: var(--gray);
+  margin-top: 50px;
+}
+
+#Header .BarIcons {
   background-color: var(--yellow);
 }
 
-.BarIcons_field {
+#Header .BarIcons_field {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-.BarIcons .bi {
+#Header .BarIcons .bi {
   font-size: 30px;
 }
 
-.BarIconsBox {
+#Header .BarIconsBox {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -27,31 +33,25 @@ main {
   gap: 20px;
 }
 
-.BarIcons_field-text {
+#Header .BarIcons_field-text {
   color: var(--gray);
   text-decoration: none;
   font-weight: bold;
   text-align: center;
 }
 
-.MainTitle {
-  text-align: center;
-  color: var(--gray);
-  margin-top: 50px;
-}
-
-.MainHeader {
+#Header .MainHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
 }
 
-.MainHeaderLogo img {
+#Header .MainHeaderLogo img {
   height: 100px;
 }
 
-.MainHeaderNav {
+#Header .MainHeaderNav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,31 +59,31 @@ main {
   list-style: none;
 }
 
-.MainHeaderNav_item {
+#Header .MainHeaderNav_item {
   list-style: none;
 }
 
-.MainHeaderNav_menu {
+#Header .MainHeaderNav_menu {
   background: transparent;
   width: 50px;
 }
 
-.MainHeaderNav .bi {
+#Header .MainHeaderNav .bi {
   font-size: 40px;
 }
 
-.Home {
+#Home .Home {
   height: 600px;
   width: 100%;
 }
 
-.HomeImage {
+#Home .HomeImage {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-.accordion {
+#HomeBoxSearch .accordion {
   background-color: var(--yellow);
   margin-top: -50px;
   z-index: 1000;
@@ -92,109 +92,136 @@ main {
   --bs-accordion-btn-focus-box-shadow: none !important;
 }
 
-.AccordionHeaders {
+#HomeBoxSearch .AccordionHeaders {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
 }
 
-.accordion-button {
+#HomeBoxSearch .accordion-button {
   background-color: transparent !important;
   font-weight: bold;
 }
 
-.accordion-button::after {
+#HomeBoxSearch .accordion-button::after {
   display: none !important;
 }
 
-.accordion-button:not(.collapsed) {
+#HomeBoxSearch .accordion-button:not(.collapsed) {
   color: #fff !important;
   border-bottom: 5px solid var(--gray);
   box-shadow: none !important;
 }
 
-.accordion-item {
+#HomeBoxSearch .accordion-item {
   background-color: transparent !important;
   border: 0 !important;
 }
 
-.SearchByBrandCarousel {
+#HomeBoxSearch .HomeBoxSearchForm {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+#HomeBoxSearch .HomeBoxSearchForm_input {
+  width: 70%;
+  height: 70px;
+  padding-left: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--gray);
+  font-size: 24px;
+}
+
+#HomeBoxSearch .HomeBoxSearchForm_btn {
+  height: 70px;
+  width: 30%;
+  background-color: var(--gray);
+  color: #fff;
+  font-size: 24px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+
+#SearchByBrand .SearchByBrandCarousel {
   height: 100%;
   margin-bottom: 100px;
   margin-top: 50px;
   padding: 0 100px;
 }
 
-.SearchByBrandCarousel .item{
+#SearchByBrand .SearchByBrandCarousel .item {
   width: 150px;
   height: 120px;
 }
-.SearchByBrandCarousel .item img{
+#SearchByBrand .SearchByBrandCarousel .item img {
   width: 100%;
   height: 100%;
 }
 
-
-
-.HighlightsCards {
+#Highlights .HighlightsCards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
   justify-content: center;
   gap: 30px;
 }
 
-.Card {
+#Highlights .Card {
   width: 100%;
   margin-top: 50px;
   background-color: #fff;
 }
 
-.Card img {
+#Highlights .Card img {
   width: 100%;
 }
 
-.Card_title {
+#Highlights .Card_title {
   color: var(--gray);
   background-color: var(--yellow);
   padding: 15px 0 15px 15px;
 }
 
-.Card_desc-box {
+#Highlights .Card_desc-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 0 5px;
 }
 
-.Card_desc-text {
+#Highlights .Card_desc-text {
   color: var(--gray-3);
   padding: 0 15px;
   margin-bottom: 0;
 }
 
-.Card_value {
+#Highlights .Card_value {
   color: var(--gray);
   padding: 15px 0 15px 15px;
 }
 
 @media screen and (min-width: 0) {
-  .accordion {
-    padding: 20px;
-    border-radius: 0;
-  }
-  .AccordionHeaders {
-    flex-direction: column;
-  }
-  .accordion-button {
-    font-size: 20px;
-    text-align: center;
-  }
   .MainTitle {
     font-size: 30px;
   }
 
-  .SearchByBrandCarousel {
+  #HomeBoxSearch .accordion {
+    padding: 20px;
+    border-radius: 0;
+  }
+  #HomeBoxSearch .AccordionHeaders {
+    flex-direction: column;
+  }
+  #HomeBoxSearch .accordion-button {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #SearchByBrand .SearchByBrandCarousel {
     padding: 0 10px;
   }
 }
@@ -212,17 +239,17 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .accordion {
+  #HomeBoxSearch .accordion {
     padding: 30px;
   }
-  .AccordionHeaders {
+  #HomeBoxSearch .AccordionHeaders {
     flex-direction: row;
   }
 
-  .MainTitle {
+  #HomeBoxSearch .MainTitle {
     font-size: 40px;
   }
-  .SearchByBrandCarousel {
+  #SearchByBrand .SearchByBrandCarousel {
     padding: 0 50px;
   }
 }
@@ -231,16 +258,16 @@ main {
   .MainTitle {
     font-size: 50px;
   }
-  .MainHeader {
+  #Header .MainHeader {
     gap: 150px;
   }
-  .BarIcons_field-text {
+  #Header .BarIcons_field-text {
     font-size: 16px;
   }
-  .MainHeaderNav_menu {
+  #Header .MainHeaderNav_menu {
     display: none;
   }
-  .SearchByBrandCarousel {
+  #SearchByBrand .SearchByBrandCarousel {
     padding: 0 70px;
   }
 }
@@ -249,34 +276,34 @@ main {
 }
 
 @media screen and (min-width: 1400px) {
-  .MainHeaderNav_item {
+  #Header .MainHeaderNav_item {
     font-size: 18px;
   }
 }
 
 @media screen and (min-width: 1600px) {
-  .accordion {
-    border-radius: 40px;
-  }
-  .MainHeaderNav_item {
+  #Header .MainHeaderNav_item {
     font-size: 20px;
+  }
+  #HomeBoxSearch .accordion {
+    border-radius: 40px;
   }
 }
 
 @media screen and (max-width: 300px) {
-  .MainHeaderLogo img {
+  #Header .MainHeaderLogo img {
     height: 80px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .BarIcons_field-text {
+  #Header .BarIcons_field-text {
     display: none;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .MainHeaderNav_item {
+  #Header .MainHeaderNav_item {
     display: none;
   }
 }
