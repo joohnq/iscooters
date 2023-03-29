@@ -84,7 +84,6 @@
         aria-labelledby="offcanvasExampleLabel"
       >
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
           <button
             type="button"
             class="btn-close"
@@ -93,24 +92,13 @@
           ></button>
         </div>
         <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc.
-          </div>
-          <div class="dropdown mt-3">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-            >
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+          <nav class="MainHeaderNavMobile">
+            <li class="MainHeaderNavMobile_item">Scooters Elétricas</li>
+            <li class="MainHeaderNavMobile_item">Scooters Combustão</li>
+            <li class="MainHeaderNavMobile_item">Comprar Scooter</li>
+            <li class="MainHeaderNavMobile_item">Vender Scooter</li>
+            <li class="MainHeaderNavMobile_item">Ajuda</li>
+          </nav>
         </div>
       </div>
     </header>
@@ -123,7 +111,7 @@
         />
       </div>
       <div class="HomeBoxSearch" id="HomeBoxSearch">
-        <div class="accordion container" id="accordionExample">
+        <div class="accordion" id="accordionExample">
           <div class="AccordionHeaders">
             <h2 class="accordion-header" id="headingOne">
               <button
@@ -183,7 +171,13 @@
             >
               <div class="accordion-body">
                 <form action="" class="HomeBoxSearchForm">
-                  <input type="text" name="marcaOuModelo" id="marcaOuModelo"  class="HomeBoxSearchForm_input" placeholder="Digite a marca ou modelo"/>
+                  <input
+                    type="text"
+                    name="marcaOuModelo"
+                    id="marcaOuModelo"
+                    class="HomeBoxSearchForm_input"
+                    placeholder="Digite a marca ou modelo"
+                  />
                   <button type="submit" class="HomeBoxSearchForm_btn">
                     <i class="bi bi-search"></i>
                     Buscar Scooters
@@ -201,7 +195,13 @@
             >
               <div class="accordion-body">
                 <form action="" class="HomeBoxSearchForm">
-                  <input type="text" name="marcaOuModelo" id="marcaOuModelo"  class="HomeBoxSearchForm_input" placeholder="Digite a marca ou modelo"/>
+                  <input
+                    type="text"
+                    name="marcaOuModelo"
+                    id="marcaOuModelo"
+                    class="HomeBoxSearchForm_input"
+                    placeholder="Digite a marca ou modelo"
+                  />
                   <button type="submit" class="HomeBoxSearchForm_btn">
                     <i class="bi bi-search"></i>
                     Buscar Scooters
@@ -219,7 +219,13 @@
             >
               <div class="accordion-body">
                 <form action="" class="HomeBoxSearchForm">
-                  <input type="text" name="marcaOuModelo" id="marcaOuModelo"  class="HomeBoxSearchForm_input" placeholder="Digite a marca ou modelo"/>
+                  <input
+                    type="text"
+                    name="marcaOuModelo"
+                    id="marcaOuModelo"
+                    class="HomeBoxSearchForm_input"
+                    placeholder="Digite a marca ou modelo"
+                  />
                   <button type="submit" class="HomeBoxSearchForm_btn">
                     <i class="bi bi-search"></i>
                     Buscar Scooters
@@ -237,7 +243,13 @@
             >
               <div class="accordion-body">
                 <form action="" class="HomeBoxSearchForm">
-                  <input type="text" name="marcaOuModelo" id="marcaOuModelo"  class="HomeBoxSearchForm_input" placeholder="Digite a marca ou modelo"/>
+                  <input
+                    type="text"
+                    name="marcaOuModelo"
+                    id="marcaOuModelo"
+                    class="HomeBoxSearchForm_input"
+                    placeholder="Digite a marca ou modelo"
+                  />
                   <button type="submit" class="HomeBoxSearchForm_btn">
                     <i class="bi bi-search"></i>
                     Buscar Scooters
@@ -250,7 +262,7 @@
       </div>
       <div class="SearchByBrand container" id="SearchByBrand">
         <h2 class="MainTitle">Buscar por Marca</h2>
-        <div class="owl-carousel owl-theme SearchByBrandCarousel">
+        <div class="owl-carousel owl-theme SearchByBrandCarousel ">
           <div class="item">
             <img src="./assets/honda.jpg" alt="IMAGEM" />
           </div>
@@ -263,6 +275,19 @@
           <div class="item">
             <img src="./assets/honda.jpg" alt="IMAGEM" />
           </div>
+          <div class="item">
+            <img src="./assets/honda.jpg" alt="IMAGEM" />
+          </div>
+          <div class="item">
+            <img src="./assets/honda.jpg" alt="IMAGEM" />
+          </div>
+          <div class="item">
+            <img src="./assets/honda.jpg" alt="IMAGEM" />
+          </div>
+          <div class="item">
+            <img src="./assets/honda.jpg" alt="IMAGEM" />
+          </div>
+
           <div class="item">
             <img src="./assets/honda.jpg" alt="IMAGEM" />
           </div>
@@ -330,7 +355,7 @@
         </div>
         <p class="text-center mt-5 mb-5">ver mais...</p>
       </div>
-      <div class="owl-carousel owl-theme BannerPromo">
+      <div class="owl-carousel owl-theme BannerPromo container" id="BannerPromo">
         <div class="item">
           <img src="./assets/imagem-promo.png" alt="IMAGE" />
         </div>
@@ -356,9 +381,34 @@
     <script>
       $(".SearchByBrandCarousel").owlCarousel({
         loop: true,
-        nav: true,
         margin: 10,
-        autoWidth: true,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          350: {
+            items: 2,
+          },
+          500: {
+            items: 3,
+          },
+          768: {
+            items: 4,
+          },
+          992: {
+            items: 5,
+          },
+          1140: {
+            items: 5,
+          },
+          1200: {
+            items: 6,
+          },
+          1400: {
+            items: 7,
+          },
+        },
       });
       $(".BannerPromo").owlCarousel({
         loop: true,

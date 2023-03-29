@@ -4,6 +4,36 @@ main {
   background-color: #f2f3f3;
 }
 
+.owl-prev,
+.owl-next {
+  border: 1px solid var(--gray) !important;
+  border-radius: 50% !important;
+  width: 40px;
+  height: 40px;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.SearchByBrandCarousel .owl-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.SearchByBrandCarousel .owl-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 40px;
+  line-height: 30px;
+}
+
 .MainTitle {
   text-align: center;
   color: var(--gray);
@@ -29,7 +59,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 80px;
+  height: 60px;
   gap: 20px;
 }
 
@@ -72,6 +102,23 @@ main {
   font-size: 40px;
 }
 
+#Header .offcanvas-header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.MainHeaderNavMobile{
+  list-style: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
 #Home .Home {
   height: 600px;
   width: 100%;
@@ -83,13 +130,16 @@ main {
   width: 100%;
 }
 
+#HomeBoxSearch {
+  margin-top: -50px;
+}
+
 #HomeBoxSearch .accordion {
   background-color: var(--yellow);
-  margin-top: -50px;
   z-index: 1000;
   position: relative;
-  max-width: 1600px;
   --bs-accordion-btn-focus-box-shadow: none !important;
+  border-radius: 40px;
 }
 
 #HomeBoxSearch .AccordionHeaders {
@@ -121,7 +171,7 @@ main {
 
 #HomeBoxSearch .HomeBoxSearchForm {
   width: 100%;
-  padding: 20px 50px;
+  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,17 +179,14 @@ main {
 }
 
 #HomeBoxSearch .HomeBoxSearchForm_input {
-  width: 70%;
   height: 70px;
   padding-left: 20px;
   border-radius: 20px;
   border: 1px solid var(--gray);
-  font-size: 24px;
 }
 
 #HomeBoxSearch .HomeBoxSearchForm_btn {
   height: 70px;
-  width: 30%;
   background-color: var(--gray);
   color: #fff;
   font-size: 24px;
@@ -154,9 +201,14 @@ main {
   padding: 0 100px;
 }
 
+.owl-theme .owl-dots {
+  display: none;
+}
+
 #SearchByBrand .SearchByBrandCarousel .item {
   width: 150px;
   height: 120px;
+  margin: 0 auto;
 }
 #SearchByBrand .SearchByBrandCarousel .item img {
   width: 100%;
@@ -205,13 +257,17 @@ main {
 }
 
 @media screen and (min-width: 0) {
+  #Header .BarIcons .bi {
+    font-size: 24px;
+  }
+
   .MainTitle {
     font-size: 30px;
   }
 
   #HomeBoxSearch .accordion {
     padding: 20px;
-    border-radius: 0;
+    margin: 0 20px;
   }
   #HomeBoxSearch .AccordionHeaders {
     flex-direction: column;
@@ -220,9 +276,42 @@ main {
     font-size: 20px;
     text-align: center;
   }
+  #HomeBoxSearch .accordion-button {
+    font-size: 16px;
+  }
 
+  #HomeBoxSearch .HomeBoxSearchForm {
+    flex-direction: column;
+  }
+  #HomeBoxSearch .HomeBoxSearchForm_input {
+    width: 100%;
+  }
+  #HomeBoxSearch .HomeBoxSearchForm_btn {
+    width: 100%;
+  }
+  #HomeBoxSearch .HomeBoxSearchForm_input {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  #HomeBoxSearch .HomeBoxSearchForm_btn {
+    font-size: 16px;
+  }
   #SearchByBrand .SearchByBrandCarousel {
     padding: 0 10px;
+  }
+  #BannerPromo .owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #BannerPromo .owl-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -230,27 +319,93 @@ main {
   .MainTitle {
     font-size: 35px;
   }
+  #Header .BarIcons_field-text {
+    font-size: 16px;
+  }
+  #HomeBoxSearch .HomeBoxSearchForm_input {
+    font-size: 16px;
+    padding-left: 15px;
+  }
+  #HomeBoxSearch .HomeBoxSearchForm {
+    padding: 20px 20px;
+  }
+
+  #HomeBoxSearch .HomeBoxSearchForm_btn {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 576px) {
+  #Header .BarIcons .bi {
+    font-size: 28px;
+  }
   .MainTitle {
     font-size: 40px;
+  }
+  #HomeBoxSearch .accordion-button {
+    font-size: 20px;
+  }
+  #HomeBoxSearch .HomeBoxSearchForm_input {
+    font-size: 18px;
+    padding-left: 15px;
+  }
+
+  #HomeBoxSearch .HomeBoxSearchForm {
+    padding: 20px 30px;
+  }
+
+  #HomeBoxSearch .HomeBoxSearchForm_btn {
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  #Header .BarIcons .bi {
+    font-size: 30px;
+  }
   #HomeBoxSearch .accordion {
     padding: 30px;
+  }
+  #HomeBoxSearch .accordion {
+    margin: 0 50px;
   }
   #HomeBoxSearch .AccordionHeaders {
     flex-direction: row;
   }
+  #HomeBoxSearch .accordion-button {
+    font-size: 16px;
+  }
+  #HomeBoxSearch .HomeBoxSearchForm {
+    flex-direction: row;
+    padding: 20px 0;
+  }
 
+  #HomeBoxSearch .HomeBoxSearchForm_input {
+    width: 60%;
+    font-size: 16px;
+  }
+  #HomeBoxSearch .HomeBoxSearchForm_btn {
+    width: 40%;
+    font-size: 16px;
+  }
   #HomeBoxSearch .MainTitle {
     font-size: 40px;
   }
   #SearchByBrand .SearchByBrandCarousel {
     padding: 0 50px;
+  }
+  #BannerPromo .owl-next {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #BannerPromo .owl-prev {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -261,11 +416,21 @@ main {
   #Header .MainHeader {
     gap: 150px;
   }
-  #Header .BarIcons_field-text {
-    font-size: 16px;
-  }
   #Header .MainHeaderNav_menu {
     display: none;
+  }
+
+  #HomeBoxSearch .HomeBoxSearchForm_input {
+    width: 70%;
+    font-size: 18px;
+  }
+  #HomeBoxSearch .HomeBoxSearchForm_btn {
+    width: 30%;
+    font-size: 18px;
+  }
+
+  #HomeBoxSearch .accordion-button {
+    font-size: 18px;
   }
   #SearchByBrand .SearchByBrandCarousel {
     padding: 0 70px;
@@ -273,11 +438,20 @@ main {
 }
 
 @media screen and (min-width: 1280px) {
+  #HomeBoxSearch .HomeBoxSearchForm {
+    padding: 20px 50px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
   #Header .MainHeaderNav_item {
     font-size: 18px;
+  }
+  #HomeBoxSearch .accordion-button {
+    font-size: 20px;
+  }
+  #HomeBoxSearch .accordion {
+    margin: 0 100px;
   }
 }
 
@@ -285,8 +459,11 @@ main {
   #Header .MainHeaderNav_item {
     font-size: 20px;
   }
-  #HomeBoxSearch .accordion {
-    border-radius: 40px;
+  #HomeBoxSearch .HomeBoxSearchForm_input {
+    font-size: 20px;
+  }
+  #HomeBoxSearch .HomeBoxSearchForm_btn {
+    font-size: 20px;
   }
 }
 
