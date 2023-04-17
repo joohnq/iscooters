@@ -1,0 +1,142 @@
+.color-yellow {
+  color: var(--yellow);
+}
+.scooterOwlCarousel .owl-stage {
+  background-color: #fff;
+}
+
+.scooterOwlCarousel .item img {
+  border-radius: 20px;
+}
+
+.scooterOwlCarousel .owl-next {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scooterOwlCarousel .owl-prev {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scooterInfos, .scooterMore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.scooterInfos_description {
+  max-width: 800px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.scooterInfos_aside {
+  max-width: 400px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  padding: 40px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.scooterInfosRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scooterInfos_name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin-bottom: 0;
+  font-size: clamp(34px, calc(100vw - 96vw), 40px);
+}
+
+.scooterInfos_description .scooterInfos_name {
+  text-align: center;
+}
+
+.scooterInfos_description-price {
+  font-weight: 600;
+  font-size: clamp(20px, calc(100vw - 97vw), 28px);
+}
+
+.scooterInfos_text {
+  margin: 30px 0;
+}
+
+.scooterInfos_description-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.scooterInfos_aside-btn {
+  background-color: var(--yellow);
+  padding: 15px 40px;
+  color: #fff;
+  border: 0;
+  border-radius: 30px;
+}
+
+.scooterMore_above {
+  width: 700px;
+  height: 300px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.scooterMore_ad {
+    width: 400px;
+    height: 600px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+
+@media screen and (min-width: 0px) {
+  .scooterInfosRow {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .scooterInfos {
+    flex-direction: column;
+  }
+  .scooterInfos_description {
+    padding: 50px 30px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .scooterInfosRow {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .scooterInfos {
+    flex-direction: row;
+  }
+  .scooterInfos_description {
+    padding: 50px 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .scooterInfos_description {
+    padding: 80px 50px;
+  }
+}

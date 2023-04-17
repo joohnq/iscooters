@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Scooter Info</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/scooter-info.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="Header" id="Header">
+      <div class="BarIcons">
+        <div class="BarIconsBox container">
+          <div class="BarIcons_field">
+            <i class="bi bi-person-circle"></i>
+            <a href="" class="BarIcons_field-text">Login</a>
+          </div>
+          <div class="BarIcons_field">
+            <i class="bi bi-heart-half"></i>
+            <a href="" class="BarIcons_field-text">Favoritos</a>
+          </div>
+          <div class="BarIcons_field">
+            <i class="bi bi-chat-right"></i>
+            <a href="" class="BarIcons_field-text">Mensagens</a>
+          </div>
+        </div>
+      </div>
+      <div class="MainHeader container">
+        <div class="MainHeaderLogo">
+          <img
+            src="./assets/iscooters-logotipo-final.png"
+            alt="LOGO ISCOOTERS"
+          />
+        </div>
+        <nav class="MainHeaderNav">
+          <li class="MainHeaderNav_item">Scooters</li>
+          <li class="MainHeaderNav_item">Scooters Elétrica</li>
+          <li class="MainHeaderNav_item">Comprar</li>
+          <li class="MainHeaderNav_item">Vender</li>
+          <li class="MainHeaderNav_item">Tabela FIPE</li>
+          <li class="MainHeaderNav_item">Dicas e Novidades</li>
+          <button
+            class="MainHeaderNav_menu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+        </nav>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <nav class="MainHeaderNavMobile">
+            <li class="MainHeaderNavMobile_item">Scooters Elétricas</li>
+            <li class="MainHeaderNavMobile_item">Scooters Combustão</li>
+            <li class="MainHeaderNavMobile_item">Comprar Scooter</li>
+            <li class="MainHeaderNavMobile_item">Vender Scooter</li>
+            <li class="MainHeaderNavMobile_item">Ajuda</li>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="owl-carousel owl-theme scooterOwlCarousel">
+        <div class="item">
+          <img src="./assets/pexels-pixabay-159192.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="./assets/pexels-pixabay-159192.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="./assets/pexels-pixabay-159192.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="./assets/pexels-pixabay-159192.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="./assets/pexels-pixabay-159192.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="./assets/pexels-pixabay-159192.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="./assets/pexels-pixabay-159192.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="./assets/pexels-pixabay-159192.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="./assets/pexels-pixabay-159192.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="./assets/pexels-pixabay-159192.jpg" alt="" />
+        </div>
+      </div>
+      <div class="scooterInfos container">
+        <div class="scooterInfos_description">
+          <div class="scooterInfosRow">
+            <h1 class="scooterInfos_name">
+              <span class="color-yellow">MARCA</span> MODELO
+            </h1>
+            <div class="scooterInfos_description-price">R$100.000,00</div>
+          </div>
+          <div class="row">
+            <p class="scooterInfos_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis dolore in tempore necessitatibus! Pariatur nostrum quae
+              velit voluptate ab hic expedita officiis, voluptates, distinctio
+              similique, exercitationem non! Unde, laboriosam ullam.
+            </p>
+          </div>
+          <div class="row">
+            <div class="scooterInfos_description-nav">
+              <div class="scooterInfos_description-ul">
+                <li>CARACTERISTICA</li>
+                <li>CARACTERISTICA</li>
+                <li>CARACTERISTICA</li>
+                <li>CARACTERISTICA</li>
+              </div>
+              <div class="scooterInfos_description-ul">
+                <li>CARACTERISTICA</li>
+                <li>CARACTERISTICA</li>
+                <li>CARACTERISTICA</li>
+                <li>CARACTERISTICA</li>
+              </div>
+              <div class="scooterInfos_description-ul">
+                <li>CARACTERISTICA</li>
+                <li>CARACTERISTICA</li>
+                <li>CARACTERISTICA</li>
+                <li>CARACTERISTICA</li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="scooterInfos_aside">
+          <h1 class="scooterInfos_name">
+            NICKNAME USER
+          </h1>
+          <p class="scooterInfos_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reiciendis dolore in tempore necessitatibus! Pariatur nostrum quae
+            velit voluptate ab hic expedita officiis, voluptates, distinctio
+            similique, exercitationem non! Unde, laboriosam ullam.
+          </p>
+          <button class="scooterInfos_aside-btn">SAIBA MAIS</button>
+        </aside>
+      </div>
+
+      <div class="scooterMore container">
+        <div class="scooterMore_above"></div>
+        <div class="scooterMore_ad"></div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1200: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
